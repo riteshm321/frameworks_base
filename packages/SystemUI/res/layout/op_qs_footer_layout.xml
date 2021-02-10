@@ -113,6 +113,22 @@
             android:clipChildren="false"
             android:clipToPadding="false">
 
+            <com.android.systemui.statusbar.phone.MultiUserSwitch
+                android:id="@+id/multi_user_switch"
+                android:layout_width="@dimen/qs_footer_action_button_size"
+                android:layout_height="@dimen/qs_footer_action_button_size"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/ripple_drawable"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/multi_user_avatar"
+                    android:layout_width="@dimen/multi_user_avatar_expanded_size"
+                    android:layout_height="@dimen/multi_user_avatar_expanded_size"
+                    android:layout_gravity="center"
+                    android:scaleType="centerInside"/>
+            </com.android.systemui.statusbar.phone.MultiUserSwitch>
+
             <com.android.systemui.statusbar.AlphaOptimizedImageView
                 android:id="@+id/edit"
                 android:layout_width="@dimen/qs_footer_action_button_size"
